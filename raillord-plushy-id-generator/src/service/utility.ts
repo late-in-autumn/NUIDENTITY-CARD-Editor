@@ -1,4 +1,4 @@
-import { IMAGE_HEIGHT, IMAGE_WIDTH, ResizerType } from "constant/other";
+import { IMAGE_HEIGHT, IMAGE_WIDTH, ResizerType } from "../constant/other";
 
 /**
  * ローカルストレージからデータを読み込む
@@ -6,7 +6,7 @@ import { IMAGE_HEIGHT, IMAGE_WIDTH, ResizerType } from "constant/other";
  * @param defaultValue デフォルト値
  */
 export const loadData = <T>(key: string, defaultValue: T): T => {
-  const temp = window.localStorage.getItem(key);
+  const temp = localStorage.getItem(key);
   if (temp !== null) {
     return JSON.parse(temp) as T;
   } else {
@@ -20,7 +20,7 @@ export const loadData = <T>(key: string, defaultValue: T): T => {
  * @param value 値
  */
 export const saveData = <T>(key: string, value: T) => {
-  window.localStorage.setItem(key, JSON.stringify(value));
+  localStorage.setItem(key, JSON.stringify(value));
 };
 
 /**

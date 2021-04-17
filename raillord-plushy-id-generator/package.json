@@ -1,6 +1,6 @@
 {
-  "name": "nuidentity-card-editor",
-  "version": "0.1.0",
+  "name": "raillord-plushy-id-generator",
+  "version": "1.3.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -17,21 +17,20 @@
     "i18next-http-backend": "^1.2.1",
     "json-loader": "^0.5.7",
     "konva": "^7.2.0",
+    "next": "10.1.3",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.13",
     "react-konva": "^17.0.0-0",
-    "react-scripts": "4.0.1",
     "typescript": "^4.0.3",
     "use-image": "^1.0.6",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": [

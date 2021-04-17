@@ -1,8 +1,8 @@
-import { ActionType } from "constant/other";
-import { FontOptionImpl } from "model/FontOption";
+import { ActionType } from "../constant/other";
+import { FontOptionImpl } from "../model/FontOption";
 import { FormEvent, useContext } from "react";
 import { Form } from "react-bootstrap";
-import { ApplicationContext } from "service/store";
+import { ApplicationContext } from "../service/store";
 import { useTranslation } from 'react-i18next';
 
 const TextForm: React.FC<{

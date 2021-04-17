@@ -1,8 +1,8 @@
-import TextForm from "component/TextForm";
+import TextForm from "../component/TextForm";
 import React, { FormEvent, useContext } from "react";
 import { Form } from "react-bootstrap";
-import { ApplicationContext } from "service/store";
-import { resizeImage } from "service/utility";
+import { ApplicationContext } from "../service/store";
+import { resizeImage } from "../service/utility";
 import { useTranslation } from 'react-i18next';
 
 const InputForm: React.FC = () => {

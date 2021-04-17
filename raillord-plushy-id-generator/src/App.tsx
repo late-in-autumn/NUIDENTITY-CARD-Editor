@@ -1,6 +1,6 @@
-import MainForm from 'container/MainForm';
+import MainForm from './container/MainForm';
 import React from 'react';
-import { ApplicationContext, useApplicationStore } from 'service/store';
+import { ApplicationContext, useApplicationStore } from './service/store';
 
 const App: React.FC = () => (
   <ApplicationContext.Provider value={useApplicationStore()}>

@@ -1,3 +1,19 @@
+# Raillord Plushy ID Generator
+
+For [*Maitetsu*](https://zh.moegirl.org.cn/%E7%88%B1%E4%B8%8A%E7%81%AB%E8%BD%A6) fans who own the raillord plushys. This project allows easily generation of ID cards for the cute family members!
+
+This project is based on [the original ID editor](https://github.com/YSRKEN/NUIDENTITY-CARD-Editor) which lacks m17n support, and used an ID template that might cause some misunderstanding in an English environment.
+
+Major changes compared to the original one:
+- Replaced `create-react-app` with `Next.js`
+- Multilingual interfaces, powered by `i18next`, supporting the following languages:
+  - English
+  - Simplified Chinese
+  - Japanese
+- Option to toggle between the original ID templates provided by sin_kou_hyou, or the new ones reworded to avoid misunderstanding in an English environment.
+
+The original Japanese readme is left intact below, for the curious ones.
+
 # NUIDENTITY CARD EDITOR
 
 ぬいハチ/ぬいれいな用の身分証(NUIDENTITY CARD)に文字入れする作業を支援するツール。

@@ -1,4 +1,4 @@
-import { FontOption } from "model/FontOption";
+import { FontOption } from "../model/FontOption";
 
 export type ActionType = ''
   | 'setNuiRegistration'

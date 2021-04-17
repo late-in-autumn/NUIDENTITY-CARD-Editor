@@ -1,6 +1,6 @@
-import { BackgroundType, NewTemplate, ResizerType } from "constant/other";
-import { Action } from "model/action";
-import { FontOption } from "model/FontOption";
+import { BackgroundType, NewTemplate, ResizerType } from "../constant/other";
+import { Action } from "../model/action";
+import { FontOption } from "../model/FontOption";
 
 export interface ApplicationStore {
   nuiRegistration: string;

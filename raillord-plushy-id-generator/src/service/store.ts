@@ -1,9 +1,9 @@
-import { BackgroundType, NewTemplate, DEFAULT_FONT_OPTION, ResizerType } from "constant/other";
-import { Action } from "model/action";
-import { FontOption, FontOptionImpl } from "model/FontOption";
-import { ApplicationStore } from "model/store";
+import { BackgroundType, NewTemplate, DEFAULT_FONT_OPTION, ResizerType } from "../constant/other";
+import { Action } from "../model/action";
+import { FontOption, FontOptionImpl } from "../model/FontOption";
+import { ApplicationStore } from "../model/store";
 import { createContext, useEffect, useState } from "react";
-import { loadData, saveData } from "service/utility";
+import { loadData, saveData } from "../service/utility";
 
 export const useApplicationStore = (): ApplicationStore => {
   const [nuiRegistration, setNuiRegistration] = useState(loadData('nuiRegistration', '8620'));
