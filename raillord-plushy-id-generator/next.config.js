@@ -1,15 +1,14 @@
 module.exports = {
-    distDir: 'build',
-    target: "serverless",
-    future: {
+   target: "serverless",
+   future: {
       webpack5: true,
-    },
-    async rewrites() {
+   },
+   async rewrites() {
       return [
-        {
-          source: "/:any*",
-          destination: "/",
-        },
+         {
+            source: "/:any*",
+            destination: "/",
+         },
       ];
-    },
-  };
+   },
+};

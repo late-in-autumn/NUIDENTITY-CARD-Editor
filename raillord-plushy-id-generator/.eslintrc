@@ -1,0 +1,86 @@
+{
+   "root": true,
+   "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:jsx-a11y/recommended",
+      "plugin:react-hooks/recommended",
+      "airbnb"
+   ],
+   "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+   },
+   "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "requireConfigFile": false,
+      "ecmaFeatures": {
+         "jsx": true
+      }
+   },
+   "settings": {
+      "react": {
+         "version": "detect"
+      }
+   },
+   "rules": {
+      "indent": [
+         "error",
+         3
+      ],
+      "quotes": [
+         "error",
+         "double"
+      ]
+   },
+   "overrides": [
+      {
+         "files": [
+            "*.ts",
+            "*.tsx"
+         ],
+         "extends": [
+            "eslint:recommended",
+            "plugin:react/recommended",
+            "plugin:import/errors",
+            "plugin:import/warnings",
+            "plugin:jsx-a11y/recommended",
+            "plugin:react-hooks/recommended",
+            "plugin:@typescript-eslint/eslint-recommended",
+            "plugin:@typescript-eslint/recommended",
+            "airbnb"
+         ],
+         "parser": "@typescript-eslint/parser",
+         "plugins": [
+            "@typescript-eslint"
+         ],
+         "rules": {
+            "indent": [
+               "error",
+               3
+            ],
+            "quotes": [
+               "error",
+               "double"
+            ],
+            "react/jsx-filename-extension": [
+               2,
+               {
+                  "extensions": [
+                     ".jsx",
+                     ".tsx"
+                  ]
+               }
+            ]
+         }
+      }
+   ],
+   "plugins": [
+      "@babel"
+   ]
+}
